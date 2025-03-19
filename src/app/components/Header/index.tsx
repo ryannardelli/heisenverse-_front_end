@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 export const Header = () => {
     return (
       <header className="bg-secondary text-white shadow-md font-inter">
@@ -9,7 +10,7 @@ export const Header = () => {
           </div>
   
           <nav className="hidden md:flex gap-6 text-sm uppercase tracking-wide">
-            {/* <a href="/" className="hover:text-green-400 transition">Home</a> */}
+            <a href="/" className="hover:text-green-400 transition">Home</a>
             <a href="/characters" className="hover:text-primary transition">Characters</a>
             <a href="/episodes" className="hover:text-primary transition">Episodes</a>
             <a href="/quizzes" className="hover:text-primary transition">Quizzes</a>
