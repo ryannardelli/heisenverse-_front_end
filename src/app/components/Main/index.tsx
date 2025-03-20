@@ -4,6 +4,7 @@ import { CardsStatistic } from "../CardsStatistic";
 
 import "/public/styles/sidebar.css";
 import { InfoStatisticAdm } from "../InfoStatisticAdm";
+import { ListUsers } from "../ListUsers";
 
 export const Main = () => {
   const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
@@ -50,6 +51,7 @@ export const Main = () => {
         </div>
       </div>
       <CardsStatistic />
+      <ListUsers />
       <InfoStatisticAdm />
     </div>
   );
