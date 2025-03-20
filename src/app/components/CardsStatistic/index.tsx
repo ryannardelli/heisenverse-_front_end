@@ -21,7 +21,7 @@ export const CardsStatistic = () => {
       <div className="card">
         <div>
           <div className="numbers">20</div>
-          <div className="cardName">Posts</div>
+          <div className="cardName">Publicações</div>
         </div>
         <div className="iconBx">
           <MdOutlineArticle size={32} />
