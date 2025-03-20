@@ -1,5 +1,7 @@
 "use client";
-import { useState } from "react";
+
+import useToggle from "../utils/useToggle";
+
 import {
   IoHomeOutline,
   IoChatbubbleOutline,
@@ -13,14 +15,12 @@ import {
   IoSunnyOutline,
   IoPersonCircleOutline,
 } from "react-icons/io5";
+
 import "/public/styles/sidebar.css";
 
 export default function Dashboard() {
-  const [menuActive, setMenuActive] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
-  };
+  // Usando hook sem conflito
+  const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
 
   return (
     <>
