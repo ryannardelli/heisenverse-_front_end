@@ -1,28 +1,41 @@
+"use client";
+import { useState } from "react";
 import {
   IoHomeOutline,
   IoChatbubbleOutline,
   IoSettingsOutline,
   IoHelpBuoyOutline,
   IoLogOutOutline,
-  IoRocketOutline,
   IoNewspaperOutline,
   IoMenuOutline,
   IoSearchOutline,
+  IoMoonOutline,
+  IoSunnyOutline,
+  IoPersonCircleOutline,
 } from "react-icons/io5";
 import "/public/styles/sidebar.css";
 
 export default function Dashboard() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
-      <div className="container-dashboard">
-        <div className="navigation">
+      <div className={`container-dashboard ${menuActive ? "active" : ""}`}>
+        <div className={`navigation ${menuActive ? "active" : ""}`}>
           <ul>
             <li>
-              <a href="#">
+              <a>
                 <span className="icon">
-                  <IoRocketOutline size={20} />
+                  <IoPersonCircleOutline size={24} />
                 </span>
-                <span className="title">Brand Name</span>
+                <div className="flex flex-col ml-2">
+                  <span className="text-sm font-medium">Ryan Nardelli</span>
+                  <span className="text-xs text-gray-400">Admin</span>
+                </div>
               </a>
             </li>
 
@@ -80,33 +93,36 @@ export default function Dashboard() {
               </a>
             </li>
 
-            <button className="w-20 h-10 rounded-full ml-4 mt-12 bg-white flex items-center transition duration-300 focus:outline-none shadow">
-              <div
-                id="switch-toggle"
-                className="w-12 h-12 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
+            {/* Toggle Light/Dark */}
+            <div className="relative inline-block w-14 h-7 mt-10 ml-4">
+              <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-yellow-500">
+                <IoSunnyOutline size={16} />
               </div>
-            </button>
+
+              <input
+                defaultChecked
+                id="switch-component-1"
+                type="checkbox"
+                className="peer appearance-none w-14 h-7 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300"
+              />
+
+              <label
+                htmlFor="switch-component-1"
+                className="absolute top-0 left-0 w-7 h-7 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-7 peer-checked:border-slate-800 cursor-pointer"
+              ></label>
+
+              <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-slate-300 peer-checked:text-white">
+                <IoMoonOutline size={16} />
+              </div>
+            </div>
           </ul>
         </div>
       </div>
 
-      <div className="main">
+      {/* MAIN */}
+      <div className={`main ${menuActive ? "active" : ""}`}>
         <div className="topbar">
-          <div className="toggle">
+          <div className="toggle cursor-pointer" onClick={toggleMenu}>
             <IoMenuOutline size={32} />
           </div>
           <div className="search">
