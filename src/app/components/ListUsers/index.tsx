@@ -1,4 +1,9 @@
 import { ListPosts } from '../ListPosts';
+import {
+  IoCreateOutline,
+  IoEyeOutline,
+  IoTrashOutline,
+} from "react-icons/io5";
 
 export const ListUsers = () => {
   return (
@@ -27,7 +32,7 @@ export const ListUsers = () => {
                       <div className="font-semibold text-left">Função</div>
                     </th>
                     <th className="p-2 whitespace-nowrap">
-                      <div className="font-semibold text-center">Idade</div>
+                      <div className="font-semibold text-center">Ações</div>
                     </th>
                   </tr>
                 </thead>
@@ -55,7 +60,17 @@ export const ListUsers = () => {
                       <div className="text-left font-medium text-primary">Membro</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-lg text-center">23</div>
+                      <div className="flex justify-center space-x-2">
+                        <button className="text-blue-500 hover:text-blue-700">
+                          <IoEyeOutline size={18} />
+                        </button>
+                        <button className="text-yellow-500 hover:text-yellow-700">
+                          <IoCreateOutline size={18} />
+                        </button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <IoTrashOutline size={18} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -80,7 +95,17 @@ export const ListUsers = () => {
                       <div className="text-left font-medium text-primary">Membro</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-lg text-center">22</div>
+                      <div className="flex justify-center space-x-2">
+                        <button className="text-blue-500 hover:text-blue-700">
+                          <IoEyeOutline size={18} />
+                        </button>
+                        <button className="text-yellow-500 hover:text-yellow-700">
+                          <IoCreateOutline size={18} />
+                        </button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <IoTrashOutline size={18} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -105,7 +130,17 @@ export const ListUsers = () => {
                       <div className="text-left font-medium text-primary">Membro</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-lg text-center">32</div>
+                      <div className="flex justify-center space-x-2">
+                        <button className="text-blue-500 hover:text-blue-700">
+                          <IoEyeOutline size={18} />
+                        </button>
+                        <button className="text-yellow-500 hover:text-yellow-700">
+                          <IoCreateOutline size={18} />
+                        </button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <IoTrashOutline size={18} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -130,7 +165,17 @@ export const ListUsers = () => {
                       <div className="text-left font-medium text-primary">Membro</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-lg text-center">18</div>
+                      <div className="flex justify-center space-x-2">
+                        <button className="text-blue-500 hover:text-blue-700">
+                          <IoEyeOutline size={18} />
+                        </button>
+                        <button className="text-yellow-500 hover:text-yellow-700">
+                          <IoCreateOutline  size={18} />
+                        </button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <IoTrashOutline  size={18} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -155,7 +200,17 @@ export const ListUsers = () => {
                       <div className="text-left font-medium text-primary">Membro</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-lg text-center">19</div>
+                      <div className="flex justify-center space-x-2">
+                        <button className="text-blue-500 hover:text-blue-700">
+                          <IoEyeOutline size={18} />
+                        </button>
+                        <button className="text-yellow-500 hover:text-yellow-700">
+                          <IoCreateOutline size={18} />
+                        </button>
+                        <button className="text-red-500 hover:text-red-700">
+                          <IoTrashOutline size={18} />
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
