@@ -9,16 +9,14 @@ import {
   IoHelpBuoyOutline,
   IoLogOutOutline,
   IoNewspaperOutline,
-  IoMoonOutline,
-  IoSunnyOutline,
   IoPersonCircleOutline,
+  IoTrophyOutline,
 } from "react-icons/io5";
 
 import "/public/styles/sidebar.css";
 
 export const SideBar = () => {
   const { isActive: menuActive } = useToggle(false);
-  // const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
   return (
     <div className={`container-dashboard ${menuActive ? "active" : ""}`}>
       <div className={`navigation ${menuActive ? "active" : ""}`}>
@@ -74,6 +72,15 @@ export const SideBar = () => {
           <li>
             <a href="#">
               <span className="icon">
+                <IoTrophyOutline size={20} />
+              </span>
+              <span className="title">Ranking</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span className="icon">
                 <IoSettingsOutline size={20} />
               </span>
               <span className="title">Configurações</span>
@@ -89,7 +96,7 @@ export const SideBar = () => {
             </a>
           </li>
 
-          {/* Toggle Light/Dark */}
+          {/* Toggle Light/Dark
           <div className="relative inline-block w-14 h-7 mt-10 ml-4">
             <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-yellow-500">
               <IoSunnyOutline size={16} />
@@ -110,7 +117,7 @@ export const SideBar = () => {
             <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-slate-300 peer-checked:text-white">
               <IoMoonOutline size={16} />
             </div>
-          </div>
+          </div> */}
         </ul>
       </div>
     </div>
