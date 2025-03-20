@@ -172,3 +172,46 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.cardBox .card:hover {
+    background: var(--primary);
+}
+
+.cardBox .card:hover .numbers, .cardBox .card:hover .cardName, .cardBox .card:hover .iconBx {
+    color: var(--white);
+}

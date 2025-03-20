@@ -31,7 +31,7 @@ export const Header = () => {
 
         <div>
           <Link
-            href="/dashboard"
+            href="#"
             className="bg-primary hover:bg-assets text-white px-4 py-2 rounded-md transition inline-block"
           >
             Login

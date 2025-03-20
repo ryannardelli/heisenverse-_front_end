@@ -1,5 +1,8 @@
 import { IoMenuOutline, IoSearchOutline } from "react-icons/io5";
 import useToggle from "../../utils/useToggle";
+import { CardsStatistic } from "../CardsStatistic";
+
+import "/public/styles/sidebar.css";
 
 export const Main = () => {
   const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
@@ -23,6 +26,7 @@ export const Main = () => {
           />
         </div>
       </div>
+      <CardsStatistic />
     </div>
   );
 };
