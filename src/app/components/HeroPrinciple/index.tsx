@@ -1,6 +1,6 @@
 import "/public/styles/hero.css";
 
-export const Hero = () => {
+export const HeroPrinciple = () => {
     return(
         <div className="main relative overflow-hidden w-full h-screen">
             <video autoPlay loop muted playsInline className="bg__video absolute inset-0 w-full h-full object-cover">

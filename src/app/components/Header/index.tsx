@@ -10,7 +10,7 @@ export const Header = () => {
           </div>
   
           <nav className="hidden md:flex gap-6 text-sm uppercase tracking-wide">
-            <a href="/" className="hover:text-green-400 transition">Home</a>
+            <a href="/" className="hover:text-primary transition">Home</a>
             <a href="/characters" className="hover:text-primary transition">Peronsagens</a>
             <a href="/episodes" className="hover:text-primary transition">Episódios</a>
             <a href="/quizzes" className="hover:text-primary transition">Quizzes</a>
