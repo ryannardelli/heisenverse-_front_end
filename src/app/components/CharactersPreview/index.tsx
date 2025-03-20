@@ -9,7 +9,7 @@ export const CharactersPreview = () => {
             {/* Card - Walter White */}
             <div className="bg-slate-800 p-4 rounded-lg shadow-lg text-center">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/6/65/Walter_White_S5B.png"
+                src="https://i.pinimg.com/originals/09/f2/ab/09f2ab426208bb5da41fb869bddf2ffd.jpg"
                 alt="Walter White"
                 className="w-32 h-32 mx-auto rounded-full mb-4 object-cover"
               />
@@ -31,7 +31,7 @@ export const CharactersPreview = () => {
             {/* Card - Saul Goodman */}
             <div className="bg-slate-800 p-4 rounded-lg shadow-lg text-center">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/d/d0/Saul_Goodman_BCS_S3.png"
+                src="http://media1.s-nbcnews.com/i/streams/2013/September/130911/8C8952203-130911-ent-saulgoodman-hmed.jpg"
                 alt="Saul Goodman"
                 className="w-32 h-32 mx-auto rounded-full mb-4 object-cover"
               />
@@ -42,7 +42,7 @@ export const CharactersPreview = () => {
             {/* Card - Gustavo Fring */}
             <div className="bg-slate-800 p-4 rounded-lg shadow-lg text-center">
               <img
-                src="https://upload.wikimedia.org/wikipedia/en/6/61/Gus_Fring_BCS_S3.png"
+                src="https://i.pinimg.com/736x/79/fe/b1/79feb1611dddcbce7910e0c1081df6e2.jpg"
                 alt="Gustavo Fring"
                 className="w-32 h-32 mx-auto rounded-full mb-4 object-cover"
               />
