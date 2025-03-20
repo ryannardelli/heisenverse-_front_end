@@ -3,6 +3,7 @@ import { EpisodesGallery } from "./components/EpisodesGallery";
 import { Header } from "./components/Header";
 import { HeroAbout } from "./components/HeroAbout";
 import { HeroPrinciple } from "./components/HeroPrinciple";
+import { QuizSection } from "./components/QuizSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroAbout />
       <CharactersPreview />
       <EpisodesGallery />
+      <QuizSection />
     </>
   )
 }

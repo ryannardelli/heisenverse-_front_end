@@ -3,7 +3,7 @@ export const HeroAbout = () => {
       <section className="text-[#fff] body-font bg-secondary">
         <div className="container h-screen mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
           <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight mb-3 text-primary dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+            <h1 className="text-3xl font-extrabold leading-9 tracking-tight mb-3 text-white dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
               Sobre <span className="text-emerald-500">Breaking Bad</span>
             </h1>
             <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed text-white">
