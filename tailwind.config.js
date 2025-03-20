@@ -12,11 +12,11 @@ module.exports = {
         inter: ["Inter", "serif"],
       },
       colors: {
-        primary: '#5DBF30',
-        secondary: '#0D0D0D',
-        assets: '#36731A',
-        light: '#E0F2FE',
-        dark: '#1E3A8A',
+        primary: "#5DBF30",
+        secondary: "#0D0D0D",
+        assets: "#36731A",
+        light: "#E0F2FE",
+        dark: "#1E3A8A",
       },
     },
   },
@@ -24,4 +24,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
