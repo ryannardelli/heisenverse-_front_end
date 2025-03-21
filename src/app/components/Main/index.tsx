@@ -21,7 +21,7 @@ export const Main = () => {
           </label>
         </div>
 
-        <div className="relative inline-block w-14 h-7">
+        <div className="relative w-14 h-7 hidden md:block">
           <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-yellow-500">
             <IoSunnyOutline size={16} />
           </div>

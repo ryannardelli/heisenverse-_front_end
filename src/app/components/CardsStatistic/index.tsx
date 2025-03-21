@@ -14,7 +14,7 @@ export const CardsStatistic = () => {
           <div className="cardName">Visitas</div>
         </div>
         <div className="iconBx">
-          <IoEyeOutline size={32} />
+          <IoEyeOutline size={42} />
         </div>
       </div>
 
@@ -24,7 +24,7 @@ export const CardsStatistic = () => {
           <div className="cardName">Publicações</div>
         </div>
         <div className="iconBx">
-          <MdOutlineArticle size={32} />
+          <MdOutlineArticle size={42} />
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export const CardsStatistic = () => {
           <div className="cardName">Favoritos</div>
         </div>
         <div className="iconBx">
-          <IoHeartOutline size={32} />
+          <IoHeartOutline size={42} />
         </div>
       </div>
 
@@ -44,7 +44,7 @@ export const CardsStatistic = () => {
           <div className="cardName">Comentários</div>
         </div>
         <div className="iconBx">
-          <IoChatbubbleOutline size={32} />
+          <IoChatbubbleOutline size={42} />
         </div>
       </div>
     </div>
