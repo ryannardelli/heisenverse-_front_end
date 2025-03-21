@@ -1,9 +1,5 @@
-import { ListPosts } from '../ListPosts';
-import {
-  IoCreateOutline,
-  IoEyeOutline,
-  IoTrashOutline,
-} from "react-icons/io5";
+import { ListPosts } from "../ListPosts";
+import { IoCreateOutline, IoEyeOutline, IoTrashOutline } from "react-icons/io5";
 
 export const ListUsers = () => {
   return (
@@ -50,14 +46,18 @@ export const ListUsers = () => {
                             alt="Alex Shatov"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">Alex Shatov</div>
+                        <div className="font-medium text-gray-800">
+                          Alex Shatov
+                        </div>
                       </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="text-left">alexshatov@gmail.com</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-left font-medium text-primary">Membro</div>
+                      <div className="text-left font-medium text-primary">
+                        Membro
+                      </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="flex justify-center space-x-2">
@@ -85,14 +85,18 @@ export const ListUsers = () => {
                             alt="Philip Harbach"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">Philip Harbach</div>
+                        <div className="font-medium text-gray-800">
+                          Philip Harbach
+                        </div>
                       </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="text-left">philip.h@gmail.com</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-left font-medium text-primary">Membro</div>
+                      <div className="text-left font-medium text-primary">
+                        Membro
+                      </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="flex justify-center space-x-2">
@@ -120,14 +124,18 @@ export const ListUsers = () => {
                             alt="Mirko Fisuk"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">Mirko Fisuk</div>
+                        <div className="font-medium text-gray-800">
+                          Mirko Fisuk
+                        </div>
                       </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="text-left">mirkofisuk@gmail.com</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-left font-medium text-primary">Membro</div>
+                      <div className="text-left font-medium text-primary">
+                        Membro
+                      </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="flex justify-center space-x-2">
@@ -155,14 +163,18 @@ export const ListUsers = () => {
                             alt="Olga Semklo"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">Olga Semklo</div>
+                        <div className="font-medium text-gray-800">
+                          Olga Semklo
+                        </div>
                       </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="text-left">olga.s@cool.design</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-left font-medium text-primary">Membro</div>
+                      <div className="text-left font-medium text-primary">
+                        Membro
+                      </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="flex justify-center space-x-2">
@@ -170,10 +182,10 @@ export const ListUsers = () => {
                           <IoEyeOutline size={18} />
                         </button>
                         <button className="text-yellow-500 hover:text-yellow-700">
-                          <IoCreateOutline  size={18} />
+                          <IoCreateOutline size={18} />
                         </button>
                         <button className="text-red-500 hover:text-red-700">
-                          <IoTrashOutline  size={18} />
+                          <IoTrashOutline size={18} />
                         </button>
                       </div>
                     </td>
@@ -190,14 +202,18 @@ export const ListUsers = () => {
                             alt="Burak Long"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">Burak Long</div>
+                        <div className="font-medium text-gray-800">
+                          Burak Long
+                        </div>
                       </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="text-left">longburak@gmail.com</div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
-                      <div className="text-left font-medium text-primary">Membro</div>
+                      <div className="text-left font-medium text-primary">
+                        Membro
+                      </div>
                     </td>
                     <td className="p-2 whitespace-nowrap">
                       <div className="flex justify-center space-x-2">

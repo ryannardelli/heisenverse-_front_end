@@ -1,10 +1,16 @@
-import { IoMenuOutline, IoMoonOutline, IoSearchOutline, IoSunnyOutline } from "react-icons/io5";
+import {
+  IoMenuOutline,
+  IoMoonOutline,
+  IoSearchOutline,
+  IoSunnyOutline,
+} from "react-icons/io5";
 import useToggle from "../../utils/useToggle";
 import { CardsStatistic } from "../CardsStatistic";
 
 import "/public/styles/sidebar.css";
 import { InfoStatisticAdm } from "../InfoStatisticAdm";
 import { ListUsers } from "../ListUsers";
+import { GraphBox } from "../GraphBox";
 
 export const Main = () => {
   const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
@@ -51,6 +57,7 @@ export const Main = () => {
         </div>
       </div>
       <CardsStatistic />
+      <GraphBox />
       <ListUsers />
       <InfoStatisticAdm />
     </div>
