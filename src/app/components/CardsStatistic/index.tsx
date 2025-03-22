@@ -10,41 +10,41 @@ export const CardsStatistic = () => {
     <div className="cardBox dark:bg-dark">
       <div className="card">
         <div>
-          <div className="numbers">123</div>
-          <div className="cardName">Visitas</div>
+          <div className="numbers dark:text-light">123</div>
+          <div className="cardName dark:text-light">Visitas</div>
         </div>
         <div className="iconBx">
-          <IoEyeOutline size={42} />
+          <IoEyeOutline className="dark:text-light"  size={42} />
         </div>
       </div>
 
       <div className="card">
         <div>
-          <div className="numbers">20</div>
-          <div className="cardName">Publicações</div>
+          <div className="numbers dark:text-light">20</div>
+          <div className="cardName dark:text-light">Publicações</div>
         </div>
         <div className="iconBx">
-          <MdOutlineArticle size={42} />
+          <MdOutlineArticle className="dark:text-light"  size={42} />
         </div>
       </div>
 
       <div className="card">
         <div>
-          <div className="numbers">14</div>
-          <div className="cardName">Favoritos</div>
+          <div className="numbers dark:text-light">14</div>
+          <div className="cardName dark:text-light">Favoritos</div>
         </div>
         <div className="iconBx">
-          <IoHeartOutline size={42} />
+          <IoHeartOutline className="dark:text-light" size={42} />
         </div>
       </div>
 
       <div className="card">
         <div>
-          <div className="numbers">18</div>
-          <div className="cardName">Comentários</div>
+          <div className="numbers dark:text-light">18</div>
+          <div className="cardName dark:text-light">Comentários</div>
         </div>
         <div className="iconBx">
-          <IoChatbubbleOutline size={42} />
+          <IoChatbubbleOutline className="dark:text-light"  size={42} />
         </div>
       </div>
     </div>
