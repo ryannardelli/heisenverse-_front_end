@@ -12,7 +12,8 @@ import { IoMenuOutline } from "react-icons/io5";
 export const Main = () => {
   const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
   return (
-    <div className={`main ${menuActive ? "active" : ""}`}>
+      <div className={`main ${menuActive ? "active" : ""}`}>
+
       <div className="topbar">
         <div className="toggle cursor-pointer" onClick={toggleMenu}>
           <IoMenuOutline size={32} />
@@ -28,6 +29,7 @@ export const Main = () => {
           />
         </div>
       </div>
+      
       <CardsStatistic />
       <GraphBox />
       <ListUsers />

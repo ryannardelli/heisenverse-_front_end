@@ -8,7 +8,6 @@ export const SwitchTheme = () => {
       </div>
 
       <input
-        defaultChecked
         id="switch-component-1"
         type="checkbox"
         className="peer appearance-none w-14 h-7 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300"
