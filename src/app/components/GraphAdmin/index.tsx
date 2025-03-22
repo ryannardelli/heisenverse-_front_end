@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React, { useMemo } from "react";
 import {
   XAxis,
@@ -8,7 +9,7 @@ import {
   ResponsiveContainer,
   BarChart,
   Bar,
-  Cell
+  Cell,
 } from "recharts";
 
 type DataType = {
@@ -25,19 +26,37 @@ const rawData: DataType[] = [
   { name: "Apr", uv: 2780, pv: 3908, amt: 2000 },
   { name: "May", uv: 1890, pv: 4800, amt: 2181 },
   { name: "Jun", uv: 2390, pv: 3800, amt: 2500 },
-  { name: "Jul", uv: 3490, pv: 4300, amt: 2100 }
+  { name: "Jul", uv: 3490, pv: 4300, amt: 2100 },
 ];
 
-const colorsPv = ["#8884d8", "#83a6ed", "#8dd1e1", "#82ca9d", "#a4de6c", "#d0ed57", "#ffc658"];
-const colorsUv = ["#ff7300", "#ff9f33", "#ffcc66", "#ffa07a", "#f08080", "#cd5c5c", "#dc143c"];
-
+const colorsPv = [
+  "#8884d8",
+  "#83a6ed",
+  "#8dd1e1",
+  "#82ca9d",
+  "#a4de6c",
+  "#d0ed57",
+  "#ffc658",
+];
+const colorsUv = [
+  "#ff7300",
+  "#ff9f33",
+  "#ffcc66",
+  "#ffa07a",
+  "#f08080",
+  "#cd5c5c",
+  "#dc143c",
+];
 
 const Chart: React.FC = React.memo(() => {
   const data = useMemo(() => rawData, []);
 
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+      <BarChart
+        data={data}
+        margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+      >
         <defs>
           <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
@@ -57,13 +76,19 @@ const Chart: React.FC = React.memo(() => {
 
         <Bar dataKey="pv" fill="url(#colorPv)">
           {data.map((entry, index) => (
-            <Cell key={`cell-pv-${index}`} fill={colorsPv[index % colorsPv.length]} />
+            <Cell
+              key={`cell-pv-${index}`}
+              fill={colorsPv[index % colorsPv.length]}
+            />
           ))}
         </Bar>
 
         <Bar dataKey="uv" fill="url(#colorUv)">
           {data.map((entry, index) => (
-            <Cell key={`cell-uv-${index}`} fill={colorsUv[index % colorsUv.length]} />
+            <Cell
+              key={`cell-uv-${index}`}
+              fill={colorsUv[index % colorsUv.length]}
+            />
           ))}
         </Bar>
       </BarChart>

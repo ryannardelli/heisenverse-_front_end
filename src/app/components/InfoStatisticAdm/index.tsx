@@ -1,7 +1,7 @@
 export const InfoStatisticAdm = () => {
   return (
     <div className="w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-24 lg:px-8"> 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-4">
           <div className="bg-white overflow-hidden shadow sm:rounded-lg dark:bg-gray-900">
             <div className="px-4 py-5 sm:p-6">
