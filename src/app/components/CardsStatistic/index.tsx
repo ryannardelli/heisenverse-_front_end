@@ -7,7 +7,7 @@ import { MdOutlineArticle } from "react-icons/md";
 
 export const CardsStatistic = () => {
   return (
-    <div className="cardBox">
+    <div className="cardBox dark:bg-dark">
       <div className="card">
         <div>
           <div className="numbers">123</div>

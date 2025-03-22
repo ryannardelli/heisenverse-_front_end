@@ -3,20 +3,21 @@ import { IoCreateOutline, IoEyeOutline, IoTrashOutline } from "react-icons/io5";
 
 export const ListUsers = () => {
   return (
-    <section className="antialiased bg-white text-gray-600 mt-20 mb-20 md:mb-0 lg:mb-0 px-4">
+    <section className="antialiased bg-white dark:bg-dark text-gray-600 mt-20 mb-20 md:mb-0 lg:mb-0 px-4">
       <div className="flex flex-wrap justify-center gap-6">
         {/* Tabela Usuários */}
         <div className="w-full md:w-[48%] bg-white shadow-lg rounded-sm border border-gray-200">
-          <header className="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
-            <h2 className="font-semibold text-gray-800">Usuários</h2>
+          <header className="px-5 py-4 border-b border-gray-100 flex items-center justify-between dark:bg-dark">
+            <h2 className="font-semibold text-gray-800 dark:text-light">Usuários</h2>
             <button className="bg-primary text-white px-3 py-1 rounded hover:bg-primary-dark transition">
               Ver Todos
             </button>
           </header>
-          <div className="p-3">
+
+          <div className="p-3 dark:bg-dark dark:text-light">
             <div className="overflow-x-auto">
               <table className="table-auto w-full">
-                <thead className="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                <thead className="text-xs font-semibold uppercase text-gray-400 bg-gray-50 dark:bg-dark dark:text-light">
                   <tr>
                     <th className="p-2 whitespace-nowrap">
                       <div className="font-semibold text-left">Nome</div>
@@ -46,7 +47,7 @@ export const ListUsers = () => {
                             alt="Alex Shatov"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">
+                        <div className="font-medium text-gray-800 dark:text-light">
                           Alex Shatov
                         </div>
                       </div>
@@ -85,7 +86,7 @@ export const ListUsers = () => {
                             alt="Philip Harbach"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">
+                        <div className="font-medium text-gray-800 dark:text-light">
                           Philip Harbach
                         </div>
                       </div>
@@ -124,7 +125,7 @@ export const ListUsers = () => {
                             alt="Mirko Fisuk"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">
+                        <div className="font-medium text-gray-800 dark:text-light">
                           Mirko Fisuk
                         </div>
                       </div>
@@ -163,7 +164,7 @@ export const ListUsers = () => {
                             alt="Olga Semklo"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">
+                        <div className="font-medium text-gray-800 dark:text-light">
                           Olga Semklo
                         </div>
                       </div>
@@ -202,7 +203,7 @@ export const ListUsers = () => {
                             alt="Burak Long"
                           />
                         </div>
-                        <div className="font-medium text-gray-800">
+                        <div className="font-medium text-gray-800 dark:text-light">
                           Burak Long
                         </div>
                       </div>
