@@ -7,7 +7,8 @@ import {
   Legend,
   ResponsiveContainer,
   BarChart,
-  Bar
+  Bar,
+  Cell
 } from "recharts";
 
 type DataType = {
@@ -27,23 +28,44 @@ const rawData: DataType[] = [
   { name: "Jul", uv: 3490, pv: 4300, amt: 2100 }
 ];
 
-// eslint-disable-next-line react/display-name
+const colorsPv = ["#8884d8", "#83a6ed", "#8dd1e1", "#82ca9d", "#a4de6c", "#d0ed57", "#ffc658"];
+const colorsUv = ["#ff7300", "#ff9f33", "#ffcc66", "#ffa07a", "#f08080", "#cd5c5c", "#dc143c"];
+
+
 const Chart: React.FC = React.memo(() => {
-  // Memoriza os dados para evitar reprocessamento em re-renderizações
   const data = useMemo(() => rawData, []);
 
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <BarChart
-        data={data}
-        margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+      <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+        <defs>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+          </linearGradient>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
+
+        <Bar dataKey="pv" fill="url(#colorPv)">
+          {data.map((entry, index) => (
+            <Cell key={`cell-pv-${index}`} fill={colorsPv[index % colorsPv.length]} />
+          ))}
+        </Bar>
+
+        <Bar dataKey="uv" fill="url(#colorUv)">
+          {data.map((entry, index) => (
+            <Cell key={`cell-uv-${index}`} fill={colorsUv[index % colorsUv.length]} />
+          ))}
+        </Bar>
       </BarChart>
     </ResponsiveContainer>
   );
