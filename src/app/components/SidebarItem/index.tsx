@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 interface Item {
+  link: string;
   icon: React.ReactNode;
   title: string;
 }
@@ -21,10 +24,12 @@ export const SidebarItem: React.FC<SidebarItemProps> = ({
       className={activeIndex === index ? "hovered" : ""}
       onClick={() => setActiveIndex(index)}
     >
-      <a href="#">
-        <span className="icon">{item.icon}</span>
-        <span className="title">{item.title}</span>
-      </a>
+      <Link href={item.link}>
+        <div className="flex items-center gap-2">
+          <span className="icon">{item.icon}</span>
+          <span className="title">{item.title}</span>
+        </div>
+      </Link>
     </li>
   );
 };
