@@ -12,8 +12,7 @@ import { IoMenuOutline } from "react-icons/io5";
 export const Main = () => {
   const { isActive: menuActive, toggle: toggleMenu } = useToggle(false);
   return (
-      <div className={`main ${menuActive ? "active" : ""} dark:bg-dark`}>
-
+    <div className={`main ${menuActive ? "active" : ""} dark:bg-dark`}>
       <div className="topbar">
         <div className="toggle cursor-pointer" onClick={toggleMenu}>
           <IoMenuOutline className="dark:text-light" size={32} />

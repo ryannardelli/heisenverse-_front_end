@@ -8,7 +8,9 @@ export const ListUsers = () => {
         {/* Tabela Usuários */}
         <div className="w-full md:w-[48%] bg-white shadow-lg rounded-sm border border-gray-200">
           <header className="px-5 py-4 border-b border-gray-100 flex items-center justify-between dark:bg-dark">
-            <h2 className="font-semibold text-gray-800 dark:text-light">Usuários</h2>
+            <h2 className="font-semibold text-gray-800 dark:text-light">
+              Usuários
+            </h2>
             <button className="bg-primary text-white px-3 py-1 rounded hover:bg-primary-dark transition">
               Ver Todos
             </button>

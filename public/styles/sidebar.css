@@ -52,7 +52,13 @@ body {
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-  color: var(--blue);
+  color: var(--primary);
+}
+
+.navigation ul li.hovered a {
+  background: var(--white);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .navigation ul li:hover {
@@ -103,7 +109,6 @@ body {
 }
 
 /* main */
-
 .main {
   position: absolute;
   width: calc(100% - 300px);

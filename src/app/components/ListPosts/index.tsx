@@ -12,12 +12,20 @@ export const ListPosts = () => {
       <div className="p-3">
         <div className="space-y-4">
           <div className="p-4 bg-gray-50 dark:bg-dark dark:text-light rounded shadow dark:shadow-none">
-            <h3 className="font-semibold text-gray-700 dark:text-light">Post 1</h3>
-            <p className="text-gray-600 dark:text-light">Conteúdo do post 1...</p>
+            <h3 className="font-semibold text-gray-700 dark:text-light">
+              Post 1
+            </h3>
+            <p className="text-gray-600 dark:text-light">
+              Conteúdo do post 1...
+            </p>
           </div>
           <div className="p-4 bg-gray-50 dark:bg-dark rounded shadow dark:shadow-none">
-            <h3 className="font-semibold text-gray-700 dark:text-light">Post 2</h3>
-            <p className="text-gray-600 dark:text-light">Conteúdo do post 2...</p>
+            <h3 className="font-semibold text-gray-700 dark:text-light">
+              Post 2
+            </h3>
+            <p className="text-gray-600 dark:text-light">
+              Conteúdo do post 2...
+            </p>
           </div>
         </div>
       </div>

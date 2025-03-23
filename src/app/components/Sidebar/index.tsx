@@ -1,22 +1,20 @@
 "use client";
 
 import useToggle from "../../utils/useToggle";
+import { SidebarItem } from "../SidebarItem";
 
 import {
-  IoHomeOutline,
-  IoChatbubbleOutline,
-  IoSettingsOutline,
-  IoHelpBuoyOutline,
-  IoLogOutOutline,
-  IoNewspaperOutline,
   IoPersonCircleOutline,
-  IoTrophyOutline,
 } from "react-icons/io5";
 
 import "/public/styles/sidebar.css";
+import { menuItems } from "@/app/utils/menuItems";
+import { useState } from "react";
 
 export const SideBar = () => {
   const { isActive: menuActive } = useToggle(false);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   return (
     <div className={`container-dashboard ${menuActive ? "active" : ""}`}>
       <div className={`navigation ${menuActive ? "active" : ""}`}>
@@ -33,7 +31,17 @@ export const SideBar = () => {
             </a>
           </li>
 
-          <li>
+          {menuItems.map((item, index) => (
+            <SidebarItem
+              key={index}
+              item={item}
+              index={index}
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+            />
+          ))}
+
+          {/* <li className="hovered">
             <a href="#">
               <span className="icon">
                 <IoHomeOutline size={20} />
@@ -94,7 +102,7 @@ export const SideBar = () => {
               </span>
               <span className="title">Sair</span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
