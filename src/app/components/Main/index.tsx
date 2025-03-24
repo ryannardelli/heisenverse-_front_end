@@ -18,6 +18,21 @@ export const Main = () => {
       <GraphBox />
       <ListUsers />
       <InfoStatisticAdm />
+      
+       {/* Exibe componentes de acordo com o papel do usuário
+        const role = "Adm";
+       {role === "Adm" && (
+        <>
+          <CardsStatistic />
+          <GraphBox />
+          <ListUsers />
+          <InfoStatisticAdm />
+        </>
+      )}
+      {role === "User" && (
+        <div>Conteúdo para usuários normais</div>
+      )} */}
+
     </div>
   );
 };

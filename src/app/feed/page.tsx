@@ -7,6 +7,7 @@ export default function Feed() {
     return(
         <div className={`main ${menuActive ? "active" : ""} dark:bg-dark`}>
              <Topbar toggleMenu={toggleMenu} />
+             <h1 className="text-center text-4xl mt-12">Este é o feed</h1>
         </div>
     );
 }
