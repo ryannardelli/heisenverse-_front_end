@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <SideBar/>
-      <body>{children}</body>
+      {children}
     </html>
   );
 }
