@@ -14,7 +14,7 @@ export const menuItems = [
   {
     icon: React.createElement(IoHomeOutline, { size: 20 }),
     title: "Dashboard",
-    link: "/feed"
+    link: "/dashboard"
   },
   {
     icon: React.createElement(IoNewspaperOutline, { size: 20 }),
