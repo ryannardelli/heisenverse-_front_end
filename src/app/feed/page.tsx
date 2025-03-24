@@ -1,7 +1,12 @@
+"use client";
+import { Topbar } from "../components/Topbar";
+import useToggle from "../utils/useToggle";
+
 export default function Feed() {
+    const { isActive: menuActive, toggle: toggleMenu} = useToggle(false);
     return(
-        <>
-         <h1>Este é o feed</h1>
-        </>
+        <div className={`main ${menuActive ? "active" : ""} dark:bg-dark`}>
+             <Topbar toggleMenu={toggleMenu} />
+        </div>
     );
 }
